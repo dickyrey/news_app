@@ -40,3 +40,9 @@ var kTitleCard = GoogleFonts.roboto(
     fontWeight: FontWeight.bold,
   ),
 );
+
+var descriptionStyle = GoogleFonts.roboto(
+    textStyle: TextStyle(
+  fontSize: 15.0,
+  height: 2.0,
+));

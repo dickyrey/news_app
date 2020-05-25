@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/news.dart';
+import 'package:news_app/views/read_news_view.dart';
 import 'package:news_app/widgets/secondary_card.dart';
 
 class RecentTabView extends StatelessWidget {
@@ -15,7 +16,12 @@ class RecentTabView extends StatelessWidget {
 
         return InkWell(
           onTap: () {
-            // put later
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ReadNewsView(news: recent),
+              ),
+            );
           },
           child: Container(
             width: double.infinity,
